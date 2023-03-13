@@ -27,8 +27,8 @@ Usuário deve ser capaz de:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/home/my-challenges)
-- Live Site URL: [Add live site URL here](https://luxury-longma-513f9b.netlify.app/)
+- [Solution URL](https://www.frontendmentor.io/home/my-challenges)
+- [Live site URL](https://luxury-longma-513f9b.netlify.app/)
 
 ## My process
 
