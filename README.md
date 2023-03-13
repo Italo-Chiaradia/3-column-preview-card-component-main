@@ -41,4 +41,4 @@ Usuário deve ser capaz de:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Italo-Chiaradia)
+- Frontend Mentor - [Italo Chiaradia](https://www.frontendmentor.io/profile/Italo-Chiaradia)
