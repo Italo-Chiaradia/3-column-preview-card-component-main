@@ -1,0 +1,93 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    --transparent-white: hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
+    --very-light-gray: hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+}
+html {font-size: 15px}
+body {
+    font-size: 1rem;
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.6;
+}
+/* Container - Mobile */
+.container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 20% auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+/* Box */
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+    padding: 60px 40px;
+}
+.box.sedans {background-color: var(--bright-orange)}
+.box.suvs {background-color: var(--dark-cyan)}
+.box.luxury {background-color: var(--very-dark-cyan)}
+.box > h2 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--transparent-white);
+}
+.box > p {
+    color: var(--very-light-gray)
+}
+.box > .btn {
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    background-color: var(--very-light-gray);
+    border: 1px solid;
+}
+.box.sedans > .btn {color: var(--bright-orange)}
+.box.suvs > .btn {color: var(--dark-cyan)}
+.box.luxury > .btn {color: var(--very-dark-cyan)}
+.box.sedans > .btn:hover {
+    background-color: var(--bright-orange);
+    color: var(--very-light-gray);
+}
+.box.suvs > .btn:hover {
+    background-color: var(--dark-cyan);
+    color: var(--very-light-gray);
+}
+.box.luxury > .btn:hover {
+    background-color: var(--very-dark-cyan);
+    color: var(--very-light-gray);
+}
+/* Container - Desktop */
+@media screen and (min-width: 1100px) {
+    body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container {
+        width: 70%;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+    .attribution {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+}
